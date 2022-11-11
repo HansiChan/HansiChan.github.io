@@ -158,6 +158,23 @@
 </article>
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+    <div id="gitalk-container"></div>
+    <script type="text/javascript">
+        var gitalk = new Gitalk({
+            clientID: '9564fb9207f4c0269e7c',
+            clientSecret: '8e18100e8624687ed423a9ed3b070393e3d87c7b',
+            id: md5(window.location.pathname),
+            repo: 'HansiChan.github.io',
+            owner: 'HansiChan',
+            admin: 'HansiChan',
+            distractionFreeMode: ''
+        })
+        gitalk.render('gitalk-container')
+    </script>
+
 
         
           <div id="footer-post-container">
